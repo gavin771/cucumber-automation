@@ -1,0 +1,28 @@
+{
+  "name": "cucumber-automation",
+  "version": "1.0.0",
+  "description": "A sample cucumber + webdriverIO project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gavin771/cucumber-automation.git"
+  },
+  "keywords": [],
+  "author": "Gavin Samuels",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gavin771/cucumber-automation/issues"
+  },
+  "homepage": "https://github.com/gavin771/cucumber-automation#readme",
+  "dependencies": {
+    "webdriverio": "4.14.1"
+  },
+  "devDependencies": {
+    "wdio-cucumber-framework": "2.2.8",
+    "wdio-dot-reporter": "0.0.10",
+    "wdio-selenium-standalone-service": "0.0.12"
+  }
+}
