@@ -6,7 +6,7 @@ exports.config = {
     exclude: [],
     maxInstances: 10,
     sync: true,
-    logLevel: 'result',
+    logLevel: 'error',
     coloredLogs: true,
     deprecationWarnings: true,
     bail: 0,
@@ -19,7 +19,11 @@ exports.config = {
     framework: 'cucumber',
     reporters: ['dot'],
     cucumberOpts: {
-        require: ['./features/step-definitions'],        // <string[]> (file/dir) require files before executing features
+        require: [
+            './steps/**/given.js',
+            './steps/**/when.js',
+            './steps/**/then.js'
+        ],        // <string[]> (file/dir) require files before executing features
         backtrace: false,   // <boolean> show full backtrace for errors
         compiler: [],       // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
         dryRun: false,      // <boolean> invoke formatters without executing steps
